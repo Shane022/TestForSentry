@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -16,7 +16,7 @@
 		345E6EA3248619D9005C5327 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 345E6EA2248619D9005C5327 /* main.m */; };
 		345E6EAD248619D9005C5327 /* TestForSentryTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 345E6EAC248619D9005C5327 /* TestForSentryTests.m */; };
 		345E6EB8248619D9005C5327 /* TestForSentryUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 345E6EB7248619D9005C5327 /* TestForSentryUITests.m */; };
-		B649A91ABFE5A5E708D7774C /* Pods_TestForSentry.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 049F3B350E2F1E588FB0FFF1 /* Pods_TestForSentry.framework */; };
+		E47FDC15D9B98175780DD50F /* Pods_TestForSentry.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 049F3B350E2F1E588FB0FFF1 /* Pods_TestForSentry.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,7 +65,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B649A91ABFE5A5E708D7774C /* Pods_TestForSentry.framework in Frameworks */,
+				E47FDC15D9B98175780DD50F /* Pods_TestForSentry.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -150,7 +150,6 @@
 				9A727EFDCC6127D844C84B7C /* Pods-TestForSentry.debug.xcconfig */,
 				B96454E81B44336FA1F18D2C /* Pods-TestForSentry.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};

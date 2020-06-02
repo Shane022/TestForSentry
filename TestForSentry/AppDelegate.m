@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import <Sentry.h>
 
 @interface AppDelegate ()
 
@@ -16,7 +17,14 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    [SentrySDK startWithOptions:@{
+        @"dsn": @"https://3550c6183ae242539c5fb2aeabf8353d@o401454.ingest.sentry.io/5261049",
+        @"debug": @(YES)
+    }];
+    
+    NSArray *arrTemp = @[@"1", @"2", @"3"];
+    NSString *str = arrTemp[3];
+    
     return YES;
 }
 
