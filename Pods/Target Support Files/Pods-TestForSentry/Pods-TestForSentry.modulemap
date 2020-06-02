@@ -1,0 +1,6 @@
+framework module Pods_TestForSentry {
+  umbrella header "Pods-TestForSentry-umbrella.h"
+
+  export *
+  module * { export * }
+}

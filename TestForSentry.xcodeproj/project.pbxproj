@@ -16,6 +16,7 @@
 		345E6EA3248619D9005C5327 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 345E6EA2248619D9005C5327 /* main.m */; };
 		345E6EAD248619D9005C5327 /* TestForSentryTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 345E6EAC248619D9005C5327 /* TestForSentryTests.m */; };
 		345E6EB8248619D9005C5327 /* TestForSentryUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 345E6EB7248619D9005C5327 /* TestForSentryUITests.m */; };
+		B649A91ABFE5A5E708D7774C /* Pods_TestForSentry.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 049F3B350E2F1E588FB0FFF1 /* Pods_TestForSentry.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		049F3B350E2F1E588FB0FFF1 /* Pods_TestForSentry.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TestForSentry.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		345E6E8D248619D3005C5327 /* TestForSentry.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestForSentry.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		345E6E90248619D3005C5327 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		345E6E91248619D3005C5327 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -54,6 +56,8 @@
 		345E6EB3248619D9005C5327 /* TestForSentryUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestForSentryUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		345E6EB7248619D9005C5327 /* TestForSentryUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestForSentryUITests.m; sourceTree = "<group>"; };
 		345E6EB9248619D9005C5327 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9A727EFDCC6127D844C84B7C /* Pods-TestForSentry.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestForSentry.debug.xcconfig"; path = "Target Support Files/Pods-TestForSentry/Pods-TestForSentry.debug.xcconfig"; sourceTree = "<group>"; };
+		B96454E81B44336FA1F18D2C /* Pods-TestForSentry.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestForSentry.release.xcconfig"; path = "Target Support Files/Pods-TestForSentry/Pods-TestForSentry.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +65,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B649A91ABFE5A5E708D7774C /* Pods_TestForSentry.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -88,6 +93,8 @@
 				345E6EAB248619D9005C5327 /* TestForSentryTests */,
 				345E6EB6248619D9005C5327 /* TestForSentryUITests */,
 				345E6E8E248619D3005C5327 /* Products */,
+				5D925AA6ECEBACD4A16E31DC /* Pods */,
+				980373171C2FBCEF4F5740D2 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -137,6 +144,24 @@
 			path = TestForSentryUITests;
 			sourceTree = "<group>";
 		};
+		5D925AA6ECEBACD4A16E31DC /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9A727EFDCC6127D844C84B7C /* Pods-TestForSentry.debug.xcconfig */,
+				B96454E81B44336FA1F18D2C /* Pods-TestForSentry.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		980373171C2FBCEF4F5740D2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				049F3B350E2F1E588FB0FFF1 /* Pods_TestForSentry.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -144,9 +169,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 345E6EBC248619D9005C5327 /* Build configuration list for PBXNativeTarget "TestForSentry" */;
 			buildPhases = (
+				047DE3AA3FD843660FBF5A11 /* [CP] Check Pods Manifest.lock */,
 				345E6E89248619D3005C5327 /* Sources */,
 				345E6E8A248619D3005C5327 /* Frameworks */,
 				345E6E8B248619D3005C5327 /* Resources */,
+				379FA5C5E1A8B675B70166D7 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -261,6 +288,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		047DE3AA3FD843660FBF5A11 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TestForSentry-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		379FA5C5E1A8B675B70166D7 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TestForSentry/Pods-TestForSentry-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TestForSentry/Pods-TestForSentry-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TestForSentry/Pods-TestForSentry-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		345E6E89248619D3005C5327 /* Sources */ = {
@@ -437,6 +506,7 @@
 		};
 		345E6EBD248619D9005C5327 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9A727EFDCC6127D844C84B7C /* Pods-TestForSentry.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -453,6 +523,7 @@
 		};
 		345E6EBE248619D9005C5327 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B96454E81B44336FA1F18D2C /* Pods-TestForSentry.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
