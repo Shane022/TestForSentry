@@ -13,11 +13,21 @@
 @end
 
 @implementation ViewController
+{
+    NSArray *_arrTemp;
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    
+    _arrTemp = @[@"1", @"2", @"3", @"4"];
 }
 
+- (IBAction)clickEvent:(UIButton *)sender {
+    NSInteger index = arc4random() % 5;
+    NSLog(@"--- %ld", index);
+    NSString *str = _arrTemp[index];
+    NSLog(@"--- %@", str);
+}
 
 @end

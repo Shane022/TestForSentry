@@ -8,6 +8,7 @@
 
 #import "AppDelegate.h"
 #import <Sentry.h>
+#import <Bugly/Bugly.h>
 
 @interface AppDelegate ()
 
@@ -17,14 +18,16 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+    // Sentry
     [SentrySDK startWithOptions:@{
         @"dsn": @"https://3550c6183ae242539c5fb2aeabf8353d@o401454.ingest.sentry.io/5261049",
         @"debug": @(YES)
     }];
     
-    NSArray *arrTemp = @[@"1", @"2", @"3"];
-    NSString *str = arrTemp[3];
-    
+    // Bugly
+    [Bugly startWithAppId:@"b726daf534"];
+
+        
     return YES;
 }
 
